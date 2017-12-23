@@ -1,0 +1,59 @@
+{
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+        ]
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "ignore",
+        "named": "ignore",
+        "asyncArrow": "ignore",
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true,
+      }
+    ],
+    "func-names": [
+      "error",
+      "never",
+    ],
+    "arrow-body-style": [
+      "error",
+      "always",
+    ],
+    "no-multiple-empty-lines": "off",
+    "prefer-arrow-callback": "off",
+    "no-console": "off",
+    "space-in-parens": "off",
+    "global-require": "off",
+    "keyword-spacing": "off",
+  },
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "app/src",
+        ]
+      }
+    }
+  }
+}
